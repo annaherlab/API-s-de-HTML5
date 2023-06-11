@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+
+<input id="selector" type="file" accept="video/mp4" onchange="cargarVideo(this.files[0])">
+<video id="video" style="display:none" controls  width="620">
+
+<source src="" type="video/mp4"></source>
+
+</video>
+<p id="mensajeCarga" style="display:none">Espere un momento</p>
+
+<div>
+ <button onclick="document.getElementById('video').play();">Reproducir</button>
+ <button onclick="document.getElementById('video').pause();">Pausa</button>  
+ <button onclick="document.getElementById('video').volume += 0.1;">Subir Volumen</button>
+ <button onclick="document.getElementById('video').volume -= 0.1;">Bajar Volumen</button>
+</div>
+
+
+<script src="comprobarValidez.js"></script>	
+</body>
+</html>
